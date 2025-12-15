@@ -1,0 +1,13 @@
+node_modules/
+.expo/
+.env
+.env.local
+android/
+ios/
+dist/
+npm-debug.*
+*.jks
+*.p8
+.DS_Store
+.idea/
+.vscode/

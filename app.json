@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "name": "Rick and Morty",
+    "slug": "rick-and-morty-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1F2937"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTabletMode": false,
+      "bundleIdentifier": "com.rickandmorty.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1F2937"
+      },
+      "package": "com.rickandmorty.app",
+      "versionCode": 1,
+      "permissions": [
+        "INTERNET",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 21,
+            "targetSdkVersion": 33,
+            "compileSdkVersion": 33,
+            "buildToolsVersion": "33.0.0",
+            "kotlinVersion": "1.9.0",
+            "extraMavenRepositories": [
+              "https://maven.google.com"
+            ]
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icons": [
+            "./assets/notification-icon.png"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "97947b60-08c0-4b43-abe6-a0dc07319e4f"
+      }
+    },
+    "owner": "queiroz.rodrigo.costa"
+  }
+}
